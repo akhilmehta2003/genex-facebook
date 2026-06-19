@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genex Logistics - Facebook Audit & Growth Strategy</title>
+    <!-- Google Fonts: Plus Jakarta Sans for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for clean dashboard elements -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Top Navigation Bar -->
+    <header class="app-header">
+        <div class="header-logo-container">
+            <img src="logo.jpg" alt="Genex Logistics Logo" class="brand-logo">
+            <div class="brand-info">
+                <span class="brand-name">Genex Logistics</span>
+                <span class="brand-tagline">B2B Facebook Growth Strategy</span>
+            </div>
+        </div>
+        
+        <div class="header-actions">
+            <div class="badge premium-badge">
+                <i data-lucide="shield-check" class="badge-icon"></i> Marketing Head Plan
+            </div>
+            <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+                <i data-lucide="sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <button class="nav-link active" data-tab="dashboard">
+                            <i data-lucide="layout-dashboard"></i>
+                            <span>Overview & Audit</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-link" data-tab="strategy">
+                            <i data-lucide="trending-up"></i>
+                            <span>Growth Pillars</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-link" data-tab="ad-simulator">
+                            <i data-lucide="smartphone"></i>
+                            <span>B2B Ad Simulator</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-link" data-tab="content-planner">
+                            <i data-lucide="calendar"></i>
+                            <span>Content Matrix</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-link" data-tab="roi-calculator">
+                            <i data-lucide="calculator"></i>
+                            <span>ROI & Lead Calculator</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Quick Stats Card -->
+            <div class="sidebar-footer-card">
+                <div class="footer-card-header">
+                    <span class="pulse-dot"></span>
+                    <h4>Current Status</h4>
+                </div>
+                <p>Needs optimization to unlock B2B supply chain lead gen opportunities.</p>
+                <div class="audit-score-summary">
+                    <div class="score-circle">
+                        <span id="global-score-pct">42%</span>
+                    </div>
+                    <div class="score-label">Audit Score</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            
+            <!-- TAB 1: OVERVIEW & AUDIT -->
+            <section id="dashboard" class="tab-pane active">
+                <div class="pane-header animate-slide-up">
+                    <div class="header-details">
+                        <h1>Facebook Page Audit</h1>
+                        <p class="subtitle">A quantitative and qualitative evaluation of the current Facebook performance of Genex Logistics.</p>
+                    </div>
+                    <div class="metric-highlights">
+                        <div class="mini-metric">
+                            <span class="metric-val text-red">Critical</span>
+                            <span class="metric-lbl">Lead Gen Value</span>
+                        </div>
+                        <div class="mini-metric">
+                            <span class="metric-val text-yellow">Low</span>
+                            <span class="metric-lbl">Organic Reach</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audit Highlights Cards -->
+                <div class="grid grid-3 animate-slide-up delay-1">
+                    <div class="card glass-card warning-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="alert-triangle" class="text-orange"></i>
+                            <h3>Visual Identity Gaps</h3>
+                        </div>
+                        <p>Cover photo is static and lacks modern design. The logo lacks clean B2B contrast. A customized, professional video cover highlighting warehouse assets is missing.</p>
+                    </div>
+                    
+                    <div class="card glass-card warning-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="image-off" class="text-red"></i>
+                            <h3>Content Authenticity</h3>
+                        </div>
+                        <p>Over-reliance on stock images and generic national holiday greetings. The page fails to showcase the actual warehouse scale (800k+ sq. ft.) and proprietary logistics technologies.</p>
+                    </div>
+
+                    <div class="card glass-card warning-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="users" class="text-blue"></i>
+                            <h3>Lack of CTA & Funnel</h3>
+                        </div>
+                        <p>No clear B2B conversion pathway. The "Send Message" CTA is poorly integrated, and there is no active lead-magnet directing procurement managers to get a free supply-chain assessment.</p>
+                    </div>
+                </div>
+
+                <!-- Interactive Checklist Section -->
+                <div class="card main-card animate-slide-up delay-2">
+                    <div class="card-header">
+                        <div>
+                            <h2>Strategic Audit Checklist</h2>
+                            <p class="card-subtitle">Mark the issues as analyzed to update the Genex Logistics page status index.</p>
+                        </div>
+                        <div class="badge progress-badge"><span id="checklist-progress">0/6</span> Solved</div>
+                    </div>
+                    
+                    <div class="audit-checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chk-cover" class="styled-checkbox">
+                            <label for="chk-cover">
+                                <span class="item-title">Update Cover Video (Logistics in Motion)</span>
+                                <span class="item-desc">Replace static banner with a 15-second high-def drone reel of Genex FTWZ facilities and active fleet movements.</span>
+                            </label>
+                            <span class="priority-badge high">High Priority</span>
+                        </div>
+
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chk-bio" class="styled-checkbox">
+                            <label for="chk-bio">
+                                <span class="item-title">Re-write Company Bio & Contact Details</span>
+                                <span class="item-desc">Change standard description to focus on corporate value: 3PL contract logistics, bonded FTWZ space, cold-chain solutions, and India-wide distribution.</span>
+                            </label>
+                            <span class="priority-badge medium">Medium Priority</span>
+                        </div>
+
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chk-cta" class="styled-checkbox">
+                            <label for="chk-cta">
+                                <span class="item-title">B2B Call to Action Optimization</span>
+                                <span class="item-desc">Configure the primary button to point to "Request a Quote" or link directly to the logistics assessment page.</span>
+                            </label>
+                            <span class="priority-badge high">High Priority</span>
+                        </div>
+
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chk-reviews" class="styled-checkbox">
+                            <label for="chk-reviews">
+                                <span class="item-title">Enable Client Reviews & Recommendations</span>
+                                <span class="item-desc">Activate recommendations tab. Source testimonials from verified manufacturers, retail, and pharmaceutical clients.</span>
+                            </label>
+                            <span class="priority-badge medium">Medium Priority</span>
+                        </div>
+
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chk-autorespond" class="styled-checkbox">
+                            <label for="chk-autorespond">
+                                <span class="item-title">B2B Chatbot Auto-Response Flow</span>
+                                <span class="item-desc">Set up instant reply flows inside Facebook Messenger that asks: "What logistics service do you require? (3PL / FTWZ / Cold Chain / Freight Forwarding)".</span>
+                            </label>
+                            <span class="priority-badge high">High Priority</span>
+                        </div>
+
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chk-tracking" class="styled-checkbox">
+                            <label for="chk-tracking">
+                                <span class="item-title">Integrate Meta Pixel on Genex Website</span>
+                                <span class="item-desc">Install tracking tags to capture supply-chain heads visiting the website, creating a B2B retargeting pool.</span>
+                            </label>
+                            <span class="priority-badge high">High Priority</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: GROWTH PILLARS -->
+            <section id="strategy" class="tab-pane">
+                <div class="pane-header">
+                    <div class="header-details">
+                        <h1>Marketing Strategy Pillars</h1>
+                        <p class="subtitle">How a B2B logistics powerhouse captures market share and generates leads via paid and organic Facebook loops.</p>
+                    </div>
+                </div>
+
+                <!-- Strategy Grid -->
+                <div class="grid grid-2">
+                    
+                    <!-- Content Pillars -->
+                    <div class="card glass-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="boxes" class="text-green"></i>
+                            <h2>1. Content Pillar: B2B Operational Trust</h2>
+                        </div>
+                        <ul class="strategy-list">
+                            <li><strong>Warehouse Spotlights:</strong> High-definition tours showcasing advanced vertical storage, clean ambient layouts, and WMS inventory tracking systems.</li>
+                            <li><strong>Cold Chain Compliance:</strong> Short videos detailing how Genex maintains strict temperature zones for pharmaceutical shipments.</li>
+                            <li><strong>Project Cargo (Heavy Lift):</strong> Visual coverage of transport operations involving oversize turbines, plant boilers, and manufacturing equipment.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Thought Leadership -->
+                    <div class="card glass-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="book-open" class="text-green"></i>
+                            <h2>2. Content Pillar: Supply Chain Insight</h2>
+                        </div>
+                        <ul class="strategy-list">
+                            <li><strong>FTWZ Advantage Guides:</strong> Explainers on how Free Trade Warehousing Zones save customs duties and cash flows for multinational exporters.</li>
+                            <li><strong>Logistics Tech Reels:</strong> Showcasing automated parcel sorting, active GPS monitoring, and client dashboard analytics interfaces.</li>
+                            <li><strong>Industry Case Studies:</strong> "How Genex optimized retail logistics to cut transit delays by 22% for an e-commerce partner."</li>
+                        </ul>
+                    </div>
+
+                    <!-- Target Persona Card -->
+                    <div class="card glass-card target-persona-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="user-check" class="text-blue"></i>
+                            <h2>Facebook B2B Targeting Blueprint</h2>
+                        </div>
+                        <div class="target-personas">
+                            <div class="persona">
+                                <h5>Supply Chain Directors</h5>
+                                <p><strong>Audience Size:</strong> Select / Niche</p>
+                                <p><strong>Interests:</strong> Logistics Management, 3PL, Supply Chain Council, Warehousing.</p>
+                                <p><strong>Pain Point:</strong> Lead time delays, cargo damage, rising freight costs, customs bottlenecks.</p>
+                            </div>
+                            <div class="persona">
+                                <h5>Procurement Managers</h5>
+                                <p><strong>Audience Size:</strong> Medium</p>
+                                <p><strong>Interests:</strong> Procurement, Sourcing, Material Management.</p>
+                                <p><strong>Pain Point:</strong> Rigid contracts, poor customer service, lack of integrated logistics tracking.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Funnel Framework -->
+                    <div class="card glass-card funnel-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="filter" class="text-blue"></i>
+                            <h2>The B2B Facebook Lead Funnel</h2>
+                        </div>
+                        <div class="funnel-visualization">
+                            <div class="funnel-step top-funnel">
+                                <span class="step-num">01</span>
+                                <span class="step-label">TOFU: Brand Awareness</span>
+                                <span class="step-detail">Reach supply-chain heads through videos showcasing heavy lift project execution or large-scale warehouse operations.</span>
+                            </div>
+                            <div class="funnel-step mid-funnel">
+                                <span class="step-num">02</span>
+                                <span class="step-label">MOFU: Credibility & Case Studies</span>
+                                <span class="step-detail">Retarget warehouse video viewers with client case studies, custom duty saving benefits, or cold-chain storage details.</span>
+                            </div>
+                            <div class="funnel-step bottom-funnel">
+                                <span class="step-num">03</span>
+                                <span class="step-label">BOFU: B2B Lead Acquisition</span>
+                                <span class="step-detail">Promote dynamic lead generation forms asking for freight estimates or booking audits for supply-chain optimizations.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- TAB 3: B2B AD SIMULATOR -->
+            <section id="ad-simulator" class="tab-pane">
+                <div class="pane-header">
+                    <div class="header-details">
+                        <h1>Interactive B2B Ad Simulator</h1>
+                        <p class="subtitle">Toggle between different campaign styles to see how Genex Logistics ads will render for corporate decision makers.</p>
+                    </div>
+                </div>
+
+                <div class="ad-simulator-layout">
+                    <!-- Simulator Controls -->
+                    <div class="card controls-card glass-card">
+                        <h3>Campaign Customization</h3>
+                        
+                        <div class="control-group">
+                            <label for="ad-style-select">Choose Ad Concept:</label>
+                            <select id="ad-style-select" class="styled-select">
+                                <option value="ftwz">Concept 1: Duty Savings via FTWZ</option>
+                                <option value="coldchain">Concept 2: Pharma Cold Chain Excellence</option>
+                                <option value="projectcargo">Concept 3: Heavy-Lift Project Cargo</option>
+                                <option value="3pl">Concept 4: End-to-End B2B Warehousing (3PL)</option>
+                            </select>
+                        </div>
+
+                        <div class="control-group">
+                            <label>Device Frame View:</label>
+                            <div class="device-toggle-buttons">
+                                <button id="view-mobile" class="toggle-btn active">
+                                    <i data-lucide="smartphone"></i> Mobile View
+                                </button>
+                                <button id="view-desktop" class="toggle-btn">
+                                    <i data-lucide="monitor"></i> Desktop View
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="ad-insights-box">
+                            <div class="insights-title">
+                                <i data-lucide="info" class="text-green"></i>
+                                <span>Targeting Insights</span>
+                            </div>
+                            <p id="ad-insight-text">FTWZ concepts target importers and procurement directors looking to delay custom duties, reduce storage fees, and improve raw material cash flows.</p>
+                        </div>
+                    </div>
+
+                    <!-- Simulator Mockup Render -->
+                    <div class="mockup-display-container">
+                        <div id="phone-frame" class="device-frame mobile-mockup animate-pulse-border">
+                            <!-- Facebook Post Shell -->
+                            <div class="fb-post-container">
+                                <!-- Post Header -->
+                                <div class="fb-post-header">
+                                    <img src="logo.jpg" alt="Genex Logo" class="fb-post-logo">
+                                    <div class="fb-post-info">
+                                        <h4 class="company-name">Genex Logistics</h4>
+                                        <div class="post-meta">
+                                            <span>Sponsored</span> • <i data-lucide="globe"></i>
+                                        </div>
+                                    </div>
+                                    <button class="fb-more-btn"><i data-lucide="more-horizontal"></i></button>
+                                </div>
+
+                                <!-- Post Text Copy -->
+                                <div class="fb-post-text" id="fb-text">
+                                    Maximize warehouse efficiency and reduce duty bottlenecks. Discover Genex Free Trade Warehousing Zone (FTWZ) solutions in Dwarka and Pan-India. Delay customs payments and boost export efficiency.
+                                </div>
+
+                                <!-- Post Image / Video Showcase -->
+                                <div class="fb-post-media" id="fb-media-container">
+                                    <div class="fb-media-overlay" id="fb-overlay-type">WAREHOUSE HIGHLIGHT</div>
+                                    <img src="logo.jpg" alt="Ad Creative Preview" id="fb-image-creative" class="ad-creative-img">
+                                </div>
+
+                                <!-- Post Link Description -->
+                                <div class="fb-post-footer-link">
+                                    <div class="link-meta">
+                                        <span class="link-domain">GENEXLOGISTICS.IN</span>
+                                        <h4 class="link-headline" id="fb-headline">Reduce Customs Duty Costs with Genex FTWZ Warehouse Solutions</h4>
+                                        <p class="link-desc" id="fb-link-desc">Request a free supply chain duty analysis.</p>
+                                    </div>
+                                    <button class="fb-cta-btn" id="fb-cta-text">Get Quote</button>
+                                </div>
+
+                                <!-- Post Engagement Actions -->
+                                <div class="fb-post-engagement">
+                                    <div class="likes-count">
+                                        <span class="like-icons"><i data-lucide="thumbs-up"></i></span>
+                                        <span>Liked by supply-chain leads and 124 others</span>
+                                    </div>
+                                    <div class="fb-action-bar">
+                                        <button class="fb-action-btn"><i data-lucide="thumbs-up"></i> Like</button>
+                                        <button class="fb-action-btn"><i data-lucide="message-square"></i> Comment</button>
+                                        <button class="fb-action-btn"><i data-lucide="share-2"></i> Share</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: CONTENT CALENDAR -->
+            <section id="content-planner" class="tab-pane">
+                <div class="pane-header">
+                    <div class="header-details">
+                        <h1>Content Strategy Matrix & Calendar</h1>
+                        <p class="subtitle">B2B content shouldn't be boring. Check the proposed weekly posting cadence engineered for industry procurement professionals.</p>
+                    </div>
+                </div>
+
+                <!-- Calendar Content -->
+                <div class="card main-card">
+                    <div class="content-matrix-controls">
+                        <h3>Weekly Cadence Blueprint</h3>
+                        <div class="pill-group">
+                            <button class="pill active" data-filter="all">All Post Types</button>
+                            <button class="pill" data-filter="ops">Operations (Show & Tell)</button>
+                            <button class="pill" data-filter="insight">Supply Chain Insight</button>
+                            <button class="pill" data-filter="brand">People & Safety</button>
+                        </div>
+                    </div>
+
+                    <div class="calendar-grid">
+                        
+                        <!-- Monday -->
+                        <div class="calendar-day" data-cat="ops">
+                            <div class="day-header">
+                                <span class="day-name">Monday</span>
+                                <span class="category-lbl label-green">Operations Showcase</span>
+                            </div>
+                            <div class="day-body">
+                                <h5>Active Warehouse Drone Tour</h5>
+                                <p class="post-snippet">"Go behind-the-scenes at our Dwarka logistics terminal. Over 200,000 sq.ft. of pristine space featuring high-bay pallet operations and clean layout zones."</p>
+                                <div class="post-meta-details">
+                                    <span class="meta-item"><i data-lucide="video"></i> Video Reel</span>
+                                    <span class="meta-item"><i data-lucide="users"></i> Goal: Trust</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wednesday -->
+                        <div class="calendar-day" data-cat="insight">
+                            <div class="day-header">
+                                <span class="day-name">Wednesday</span>
+                                <span class="category-lbl label-blue">Strategic Insight</span>
+                            </div>
+                            <div class="day-body">
+                                <h5>FTWZ Customs Cost-Savings</h5>
+                                <p class="post-snippet">"Did you know? Exporters can store cargo in our FTWZ without payment of customs duty until cargo clearance. Learn how Genex cuts warehousing working capital cycles by up to 25%."</p>
+                                <div class="post-meta-details">
+                                    <span class="meta-item"><i data-lucide="image"></i> Infographic</span>
+                                    <span class="meta-item"><i data-lucide="filter"></i> Goal: Leads</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thursday -->
+                        <div class="calendar-day" data-cat="ops">
+                            <div class="day-header">
+                                <span class="day-name">Thursday</span>
+                                <span class="category-lbl label-green">Project Logistics</span>
+                            </div>
+                            <div class="day-body">
+                                <h5>Project Logistics - Heavy Lift Execution</h5>
+                                <p class="post-snippet">"Moving a 120-tonne reactor from plant to port. Precision logistics planning, route analysis, and safety-first engineering operations. Another milestone by the Genex cargo experts!"</p>
+                                <div class="post-meta-details">
+                                    <span class="meta-item"><i data-lucide="image"></i> Photo Carousel</span>
+                                    <span class="meta-item"><i data-lucide="users"></i> Goal: Credibility</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Friday -->
+                        <div class="calendar-day" data-cat="brand">
+                            <div class="day-header">
+                                <span class="day-name">Friday</span>
+                                <span class="category-lbl label-purple">People & Culture</span>
+                            </div>
+                            <div class="day-body">
+                                <h5>Logistics Heroes & Safety</h5>
+                                <p class="post-snippet">"Celebrating 100 days of accident-free plant operations at our northern regional hub. Meet our warehouse operations managers who run safe, punctual shifts."</p>
+                                <div class="post-meta-details">
+                                    <span class="meta-item"><i data-lucide="award"></i> Photo & Quote</span>
+                                    <span class="meta-item"><i data-lucide="heart"></i> Goal: Branding</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: ROI CALCULATOR -->
+            <section id="roi-calculator" class="tab-pane">
+                <div class="pane-header">
+                    <div class="header-details">
+                        <h1>B2B Facebook Campaign ROI Calculator</h1>
+                        <p class="subtitle">Model your Facebook lead generation efforts to predict cost-per-lead, target inquiries, and overall return on logistics budgets.</p>
+                    </div>
+                </div>
+
+                <div class="calculator-layout">
+                    <!-- Calculator Inputs -->
+                    <div class="card inputs-card glass-card">
+                        <h3>Campaign Variables</h3>
+                        
+                        <!-- Input 1 -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="range-budget">Monthly Ad Budget (INR)</label>
+                                <span class="slider-value">₹<span id="val-budget">150,000</span></span>
+                            </div>
+                            <input type="range" id="range-budget" min="20000" max="1000000" step="5000" value="150000" class="custom-slider">
+                            <div class="slider-bounds">
+                                <span>₹20K</span>
+                                <span>₹1M</span>
+                            </div>
+                        </div>
+
+                        <!-- Input 2 -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="range-cpc">Average Cost Per Click (INR)</label>
+                                <span class="slider-value">₹<span id="val-cpc">45</span></span>
+                            </div>
+                            <input type="range" id="range-cpc" min="10" max="300" step="5" value="45" class="custom-slider">
+                            <div class="slider-bounds">
+                                <span>₹10</span>
+                                <span>₹300</span>
+                            </div>
+                        </div>
+
+                        <!-- Input 3 -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="range-conv">Click-to-Lead Conversion Rate (%)</label>
+                                <span class="slider-value"><span id="val-conv">2.5</span>%</span>
+                            </div>
+                            <input type="range" id="range-conv" min="0.5" max="10.0" step="0.1" value="2.5" class="custom-slider">
+                            <div class="slider-bounds">
+                                <span>0.5%</span>
+                                <span>10%</span>
+                            </div>
+                        </div>
+
+                        <!-- Input 4 -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="range-deal-value">Average Annual Deal Value (INR)</label>
+                                <span class="slider-value">₹<span id="val-deal-value">1,500,000</span></span>
+                            </div>
+                            <input type="range" id="range-deal-value" min="200000" max="10000000" step="100000" value="1500000" class="custom-slider">
+                            <div class="slider-bounds">
+                                <span>₹200K</span>
+                                <span>₹10M</span>
+                            </div>
+                        </div>
+
+                        <!-- Input 5 -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="range-deal-close">Lead-to-Customer Close Rate (%)</label>
+                                <span class="slider-value"><span id="val-deal-close">4.0</span>%</span>
+                            </div>
+                            <input type="range" id="range-deal-close" min="0.5" max="15.0" step="0.5" value="4.0" class="custom-slider">
+                            <div class="slider-bounds">
+                                <span>0.5%</span>
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculator Outputs -->
+                    <div class="outputs-display">
+                        
+                        <!-- Primary Metrics Grid -->
+                        <div class="grid grid-2">
+                            <div class="metric-card bg-green-glow">
+                                <span class="metric-label">Estimated Leads Generated</span>
+                                <span class="metric-number" id="out-leads">83</span>
+                                <span class="metric-comparison"><i data-lucide="trending-up"></i> Supply chain inquiries</span>
+                            </div>
+
+                            <div class="metric-card">
+                                <span class="metric-label">Cost Per B2B Lead</span>
+                                <span class="metric-number">₹<span id="out-cpl">1,800</span></span>
+                                <span class="metric-comparison">Healthy for B2B logistics</span>
+                            </div>
+
+                            <div class="metric-card">
+                                <span class="metric-label">Deals Closed</span>
+                                <span class="metric-number" id="out-deals-closed">3.3</span>
+                                <span class="metric-comparison">From warm sales follow-up</span>
+                            </div>
+
+                            <div class="metric-card bg-blue-glow">
+                                <span class="metric-label">Estimated Pipeline Value</span>
+                                <span class="metric-number">₹<span id="out-pipeline">4,950,000</span></span>
+                                <span class="metric-comparison">Forecasted sales value</span>
+                            </div>
+                        </div>
+
+                        <!-- Large Highlight ROI card -->
+                        <div class="card glass-card roi-result-card">
+                            <div class="roi-percentage-display">
+                                <span class="roi-num" id="out-roi">3,300%</span>
+                                <span class="roi-label">Return on Investment (ROI)</span>
+                            </div>
+                            <div class="roi-summary-para">
+                                Based on a monthly ad spend of <strong class="text-green">₹<span id="out-spend-lbl">150,000</span></strong>, we project acquiring approximately <strong id="out-new-cust-lbl">3.3</strong> clients. With an average B2B client worth <strong class="text-green">₹<span id="out-val-lbl">1,500,000</span></strong> annually, your logistics operations pipeline receives significant growth leverage.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Script linking -->
+    <script src="app.js"></script>
+</body>
+</html>
