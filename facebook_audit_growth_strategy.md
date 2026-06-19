@@ -65,7 +65,7 @@ We will partition our content calendar into four thematic pillars designed to ed
 
 ```mermaid
 graph TD
-    P1[Pillar 1: B2B Operational Trust] -->|Showcases| Warehouses[800k+ Sq.Ft. Facilities]
+    P1[Pillar 1: B2B Operational Trust] -->|Showcases| Warehouses[25M+ Sq.Ft. Facilities]
     P1 -->|Showcases| Technology[WMS & Real-Time Tracking]
     
     P2[Pillar 2: Project Logistics Authority] -->|Showcases| HeavyLift[ODC & Massive Cargo Moves]
