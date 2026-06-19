@@ -1,5 +1,5 @@
 # Genex Logistics: B2B Facebook Audit & Growth Strategy
-**Prepared by:** Head of Marketing, Genex Logistics  
+**Prepared by:** AKHIL MEHTA 
 **Target Channel:** Facebook Page ([facebook.com/GenExLogistics](https://www.facebook.com/GenExLogistics))  
 **Objective:** Transition Facebook from an underperforming profile into a high-credibility B2B lead generation and brand-trust channel.
 
